@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9ECDD673-1328-4670-A8F0-B5AF95A2323C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FinalProject</RootNamespace>
+    <AssemblyName>FinalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forget.Designer.cs">
+      <DependentUpon>Forget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewLogin.Designer.cs">
+      <DependentUpon>NewLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="URDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="URDashboard.Designer.cs">
+      <DependentUpon>URDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDashboard.Designer.cs">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_FINAL_DB_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_FINAL_DB_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_FINAL_DB_DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_FINAL_DB_DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_FINAL_DB_DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_FINAL_DB_DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_FINAL_DB_DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_FINAL_DB_DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_FINAL_DB_DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_FINAL_DB_DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_FINAL_DB_DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_FINAL_DB_DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_FINAL_DB_DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_FINAL_DB_DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_FINAL_DB_DataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_FINAL_DB_DataSet7.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forget.resx">
+      <DependentUpon>Forget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewLogin.resx">
+      <DependentUpon>NewLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="URDashboard.resx">
+      <DependentUpon>URDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDashboard.resx">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_FINAL_DB_DataSet.xsc">
+      <DependentUpon>_FINAL_DB_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_FINAL_DB_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_FINAL_DB_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_FINAL_DB_DataSet.xss">
+      <DependentUpon>_FINAL_DB_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_FINAL_DB_DataSet1.xsc">
+      <DependentUpon>_FINAL_DB_DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_FINAL_DB_DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_FINAL_DB_DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_FINAL_DB_DataSet1.xss">
+      <DependentUpon>_FINAL_DB_DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_FINAL_DB_DataSet2.xsc">
+      <DependentUpon>_FINAL_DB_DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_FINAL_DB_DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_FINAL_DB_DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_FINAL_DB_DataSet2.xss">
+      <DependentUpon>_FINAL_DB_DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_FINAL_DB_DataSet3.xsc">
+      <DependentUpon>_FINAL_DB_DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_FINAL_DB_DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_FINAL_DB_DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_FINAL_DB_DataSet3.xss">
+      <DependentUpon>_FINAL_DB_DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_FINAL_DB_DataSet4.xsc">
+      <DependentUpon>_FINAL_DB_DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_FINAL_DB_DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_FINAL_DB_DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_FINAL_DB_DataSet4.xss">
+      <DependentUpon>_FINAL_DB_DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_FINAL_DB_DataSet5.xsc">
+      <DependentUpon>_FINAL_DB_DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="_FINAL_DB_DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_FINAL_DB_DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_FINAL_DB_DataSet5.xss">
+      <DependentUpon>_FINAL_DB_DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="_FINAL_DB_DataSet6.xsc">
+      <DependentUpon>_FINAL_DB_DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_FINAL_DB_DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_FINAL_DB_DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_FINAL_DB_DataSet6.xss">
+      <DependentUpon>_FINAL_DB_DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_FINAL_DB_DataSet7.xsc">
+      <DependentUpon>_FINAL_DB_DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="_FINAL_DB_DataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_FINAL_DB_DataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_FINAL_DB_DataSet7.xss">
+      <DependentUpon>_FINAL_DB_DataSet7.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-01-06 005503.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-modified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back ur.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back ur 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back ur 21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-voyage-of-knowledge-a-stunning-3d-rendering-featuring-books-planes-and-image_13556934.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25EPBS_LEAD-NAHLA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-wallpaper-study-abroad-abroad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1077114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10771141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\studentlogin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10771142.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ur pic2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ur pic.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ur pic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ur pic4.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
